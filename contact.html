@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- responsive for mobile -->
+    <meta name="description" content="The portfolio site of Estella Hom">
+    <meta name="keywords" content="Estella Hom, Graphic Design, Web Design, Art Director, Design">
+    <meta name="author" content="Estella Hom">
+
+    <title>Estella Hom // Graphic Design + Art Direction</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" /> <!-- Eric Meyer CSS Reset -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css"> <!-- Font Awesome! -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <p>EH Design</p>
+    </div>
+    </header>
+    <nav>
+    <div class="navigation nav-font">
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Work</a></li>
+      </ul>
+    </div>
+    </nav>
+    <article>
+      <section>
+        <div>
+          <p>Got something to say?</p><br />
+          <p>Contact me via the contact form below or email me at <a class="hover-orange" href="mailto:me@estellahom.com">estellahom@gmail.com</a></p>
+          <form class="contact-form" action="email-comments.php" method="post" name="emailform">
+            <label>
+              <p>Your Name:</p>
+              <input type="text" name="vis-name" />
+            </label>
+            <br />
+            <label>
+              <p>Your Email:</p>
+              <input type="text" name="vis-email" />
+            </label>
+            <br />
+            <label>
+              <p>Comments:</p>
+              <textarea rows="8" cols="15" name="comment"></textarea>
+            </label>
+            <div>
+              <input type="submit" name="submit-e" value="Submit" />
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+        <script>
+          var frmvalidator  = new Validator("emailform");
+          frmvalidator.addValidation("vis-name","req","Please provide your name.");
+          frmvalidator.addValidation("vis-email","req","Please provide your email.");
+          frmvalidator.addValidation("email","email","Please enter a valid email address.");
+        </script>
+    </div>
+      </section>
+      <section>
+        <div>
+        </div>
+      </section>
+    </article>
+    <footer class="clearfix">
+      <div id="social">
+        <ul>
+          <li><a target="_blank" href="https://www.instagram.com/stellhom/?hl=en"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li><a target="_blank" href="https://twitter.com/stellhom"><i class="fa fa-twitter fa-2x"></i></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/estellahom"><i class="fa fa-facebook fa-2x"></i></a></li>
+          <li><a target="_blank" href="mailto:me@estellahom.com"><i class="fa fa-envelope fa-2x"></i></a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p class="footer-text">
+          &#169; Copyright 2016 Estella Hom. Made with <i class="fa fa-heart fa-1x"></i> in Toronto Canada.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

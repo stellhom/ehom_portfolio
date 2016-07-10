@@ -1,0 +1,295 @@
+/* ========== Overall Styles ========== */
+
+body {
+
+}
+
+p,
+.title,
+.footer-text {
+  font-family: 'Open Sans', sans-serif;   /* Google Font */
+  font-size: 16px;
+  line-height: 1.75;
+  padding: 8px 0px 20px 0px;
+}
+
+h1 {
+  font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
+  font-size: 3rem;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
+  font-size: 2rem;
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'geometria_lightlight';
+    src: url('../fonts/geometria/Geometria-Light-webfont.eot');
+    src: url('../fonts/geometria/Geometria-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geometria/Geometria-Light-webfont.woff2') format('woff2'),
+         url('../fonts/geometria/Geometria-Light-webfont.woff') format('woff'),
+         url('../fonts/geometria/Geometria-Light-webfont.ttf') format('truetype'),
+         url('../fonts/geometria/Geometria-Light-webfont.svg#geometria_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.nav-font {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+
+.section-margin {
+  padding: 20px 30px;
+}
+
+/* Buttons */
+
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+/* ========== Clear the floats ========== */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; // supports ie 6/7
+}*/
+
+/* ========== Header ========== */
+
+header {
+  float: left;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.title  {
+  padding: 10px 30px;
+  /*width: 30%;*/
+}
+
+.title li {
+  display: inline;
+  margin: auto;
+  margin: 20px 0px 20px 0px;
+}
+
+.title h1 {
+  padding-left: 10px;
+  font-family: 'Secular One', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+
+/* ========== Navigation ========== */
+
+nav {
+  float: right;
+}
+
+.navigation {
+  /*float: right;*/
+  margin: 50px 40px 20px 40px;
+  /*width: 50%;*/
+}
+
+.navigation ul {
+  /*display: flex;
+  flex-direction: row-reverse;*/
+  /*padding-bottom: 20px;*/
+  /*border-bottom: 1px solid grey;*/
+}
+
+.navigation li {
+  display: inline;
+  padding: 0px 10px;
+  font-size: 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #666;
+}
+
+.navigation a:hover {
+  margin-bottom: 4px;
+  border-bottom: 5px solid #ff7b00;
+}
+
+article,
+section {
+  clear: both;
+}
+/* ========== Project Filter ========== */
+
+/*.proj-filter {
+  display: flex;
+  justify-content: center;
+}*/
+
+/*.proj-nav {
+  display: inline;
+  padding: 0px 10px;
+}*/
+
+.filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	.filters li {
+		float:left;
+	}
+
+	.filters li span {
+		display: inline;
+		padding:5px 10px;
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+
+	.filters li span.active {
+		background: #e95a44;
+		color:#fff;
+	}
+/* ========== Projects ========== */
+
+.proj-container {
+
+}
+
+.proj-wrapper {
+  overflow:hidden;
+	position: relative !important;
+	background: lightgrey;
+  cursor:pointer;
+}
+
+
+
+
+/* ========== About ========== */
+
+.container-center{
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;*/
+
+}
+
+.headshot {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* ========== Footer ========== */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(196, 15%, 10%);
+  padding: 5% 20%;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social ul {
+  text-align: center;
+}
+
+.social li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0px 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px hsla(125, 32%, 24%, 0.75); /* adds dropshadow to text! */
+}
+
+.social li a {
+  color: white;
+}
+
+.social li a:hover {
+  color: #cdf7d9;
+}
+.copyright {
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 15px;
+  color: lightgrey;
+  line-height: 1.5;
+}
+
+.fa-heart {
+  color: #ec342f;
+}
+
+/* ========== Media Queries for 720px ========== */
+
+@media screen and (min-width:720px) {
+
+
+}
+
+
+/* ========== Media Queries for 1024px ========== */
+
+@media screen and (min-width:1024px) {
+
+}
