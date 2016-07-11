@@ -6,7 +6,8 @@ body {
 
 p,
 .title,
-.footer-text {
+.footer-text
+{
   font-family: 'Open Sans', sans-serif;   /* Google Font */
   font-size: 16px;
   line-height: 1.75;
@@ -98,9 +99,9 @@ button:active {
 
 /* ========== Header ========== */
 
-header {
+/*header {
   float: left;
-}
+}*/
 
 .logo {
   width: 75px;
@@ -108,11 +109,12 @@ header {
 }
 
 .title  {
-  padding: 10px 30px;
+  float: left;
+  padding: 0px 30px 10px 30px;
   /*width: 30%;*/
 }
 
-.title li {
+/*.title li {
   display: inline;
   margin: auto;
   margin: 20px 0px 20px 0px;
@@ -123,17 +125,20 @@ header {
   font-family: 'Secular One', sans-serif;
   font-size: 17px;
   text-transform: uppercase;
-}
+}*/
 
 
 /* ========== Navigation ========== */
 
 nav {
-  float: right;
+  /*float: right;*/
+  width: 100%;
+  height: 50px;
+
 }
 
 .navigation {
-  /*float: right;*/
+  float: right;
   margin: 50px 40px 20px 40px;
   /*width: 50%;*/
 }
@@ -202,7 +207,7 @@ section {
 /* ========== Projects ========== */
 
 .proj-container {
-
+  padding-top: 20px;
 }
 
 .proj-wrapper {
@@ -237,7 +242,8 @@ section {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: hsl(196, 15%, 10%);
+  background-color: #4c4c4c;
+  /*background-color: hsl(196, 15%, 10%);*/
   padding: 5% 20%;
 }
 
@@ -284,6 +290,11 @@ footer {
 
 @media screen and (min-width:720px) {
 
+  .section-margin {
+    padding: 20px 60px;
+  }
+
+
 
 }
 
@@ -291,5 +302,9 @@ footer {
 /* ========== Media Queries for 1024px ========== */
 
 @media screen and (min-width:1024px) {
+
+  .section-margin {
+    padding: 20px 100px;
+  }
 
 }
