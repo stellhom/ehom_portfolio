@@ -168,6 +168,7 @@ nav {
   display: inline;
   padding: 0px 10px;
   font-size: 15px;
+  text-transform: uppercase;
 }
 
 .navigation a {
@@ -229,6 +230,7 @@ section {
 .proj-grid {
   max-width: 100%;
   margin: 0 auto;
+  font-size: 0; /* removes gap between rows */
 }
 
 /* project boxes */
@@ -238,6 +240,7 @@ section {
   background-color: lightblue;
   float: left;
   overflow:hidden;
+
 }
 
 /* makes the image fit within the container */
@@ -245,6 +248,7 @@ section {
   max-width:100%;
   position: relative;
   top:0;
+
 }
 
 .proj-wrapper {
@@ -252,6 +256,7 @@ section {
 	position: relative;
 	/*background: lightgrey;*/
   cursor:pointer;
+
 }
 
 
@@ -266,7 +271,7 @@ section {
 
 }
 
-.headshot {
+.width100percent {
   width: 100%;
   height: auto;
   display: block;
