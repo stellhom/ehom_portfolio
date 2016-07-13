@@ -1,13 +1,35 @@
 /* ========== Overall Styles ========== */
 
+@font-face {
+    font-family: 'geometria_lightlight';
+    src: url('../fonts/geometria/Geometria-Light-webfont.eot');
+    src: url('../fonts/geometria/Geometria-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geometria/Geometria-Light-webfont.woff2') format('woff2'),
+         url('../fonts/geometria/Geometria-Light-webfont.woff') format('woff'),
+         url('../fonts/geometria/Geometria-Light-webfont.ttf') format('truetype'),
+         url('../fonts/geometria/Geometria-Light-webfont.svg#geometria_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../Roboto-Regular-webfont.eot');
+    src: url('../Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Roboto-Regular-webfont.woff') format('woff'),
+         url('../Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
 
 }
 
 p,
-.title,
-.footer-text
-{
+.title {
   font-family: 'Open Sans', sans-serif;   /* Google Font */
   font-size: 16px;
   line-height: 1.75;
@@ -32,28 +54,20 @@ ul {
   padding: 0;
 }
 
-@font-face {
-    font-family: 'geometria_lightlight';
-    src: url('../fonts/geometria/Geometria-Light-webfont.eot');
-    src: url('../fonts/geometria/Geometria-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/geometria/Geometria-Light-webfont.woff2') format('woff2'),
-         url('../fonts/geometria/Geometria-Light-webfont.woff') format('woff'),
-         url('../fonts/geometria/Geometria-Light-webfont.ttf') format('truetype'),
-         url('../fonts/geometria/Geometria-Light-webfont.svg#geometria_lightlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 .nav-font {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'robotoregular', 'Open Sans', sans-serif;
+  font-size: 15px;
 }
-
 
 .section-margin {
   padding: 20px 30px;
 }
+
+/* for portfolio grid. hide for now...*/
+/*.top-shadow {
+  box-shadow: 0px -1px 6px hsla(240, 2%, 8%, 0.5);
+}*/
+
 
 /* Buttons */
 
@@ -105,7 +119,7 @@ button:active {
 
 .logo {
   width: 75px;
-  height: 75px;
+  height: auto;
 }
 
 .title  {
@@ -169,13 +183,15 @@ nav {
 article,
 section {
   clear: both;
+
 }
 /* ========== Project Filter ========== */
 
-/*.proj-filter {
-  display: flex;
-  justify-content: center;
-}*/
+.proj-filter {
+  margin-bottom: 20px;
+  /*display: flex;
+  justify-content: center;*/
+}
 
 /*.proj-nav {
   display: inline;
@@ -194,26 +210,47 @@ section {
 
 	.filters li span {
 		display: inline;
-		padding:5px 10px;
+		padding:5px 30px;
 		text-decoration:none;
+    text-transform: uppercase;
 		color:#666;
 		cursor: pointer;
 	}
 
 	.filters li span.active {
-		background: #e95a44;
-		color:#fff;
+		/*background: #e95a44;*/
+    /*color:#fff;*/
+    border: 1px solid #e95a44;
+    color: #e95a44;
 	}
 /* ========== Projects ========== */
 
-.proj-container {
-  padding-top: 20px;
+/* container for all projects */
+.proj-grid {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* project boxes */
+.proj-width {
+  width: 100%;
+  height: auto;
+  background-color: lightblue;
+  float: left;
+  overflow:hidden;
+}
+
+/* makes the image fit within the container */
+.project img {
+  max-width:100%;
+  position: relative;
+  top:0;
 }
 
 .proj-wrapper {
   overflow:hidden;
-	position: relative !important;
-	background: lightgrey;
+	position: relative;
+	/*background: lightgrey;*/
   cursor:pointer;
 }
 
@@ -240,11 +277,13 @@ section {
 /* ========== Footer ========== */
 
 footer {
+  clear: both;
   display: flex;
   flex-direction: column;
   background-color: #4c4c4c;
   /*background-color: hsl(196, 15%, 10%);*/
   padding: 5% 20%;
+
 }
 
 .social {
@@ -277,6 +316,7 @@ footer {
 }
 
 .footer-text {
+  font-family: 'robotoregular', 'Open Sans', sans-serif;
   font-size: 15px;
   color: lightgrey;
   line-height: 1.5;
@@ -284,6 +324,20 @@ footer {
 
 .fa-heart {
   color: #ec342f;
+}
+
+/* ========== Media Queries for 480px ========== */
+
+@media screen and (min-width:480px) {
+
+  /* project boxes */
+  .proj-width {
+    width: 50%;
+  }
+
+
+
+
 }
 
 /* ========== Media Queries for 720px ========== */
@@ -294,7 +348,10 @@ footer {
     padding: 20px 60px;
   }
 
-
+  /* project boxes */
+  .proj-width {
+    width: 33.333%;
+  }
 
 }
 
