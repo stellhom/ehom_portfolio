@@ -112,6 +112,11 @@ button:active {
   zoom: 1; // supports ie 6/7
 }*/
 
+article,
+section {
+  clear: both;
+}
+
 /* ========== Header ========== */
 
 /*header {
@@ -182,10 +187,7 @@ nav {
   border-bottom: 3px solid #ff7b00;
 }*/
 
-article,
-section {
-  clear: both;
-}
+
 
 /* Mobile Navigation */
 
@@ -194,9 +196,7 @@ section {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body {
-  font-family: sans-serif;
-}
+
 a {
   text-decoration: none;
 }
@@ -206,7 +206,7 @@ a {
   height: 40px;
 }
 .menu-link {
-  color: #ed4343;
+  color: #7aabb9;
   float: right;
   display: block;
   padding: 1em;
@@ -235,11 +235,11 @@ a {
   border-bottom: 1px solid #666;
 }
 .togglemenu li {
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #666;
   padding: 10px 0px;
 }
 .togglemenu li a {
-  color: orangered;
+  color: #7aabb9;
   display: block;
   padding: 0.8em;
 }
@@ -284,8 +284,8 @@ a {
 	.filters li span.active {
 		/*background: #e95a44;*/
     /*color:#fff;*/
-    border: 1px solid #e95a44;
-    color: #e95a44;
+    border: 1px solid #ff6600;
+    color: #ff6600;
 	}
 /* ========== Projects ========== */
 
