@@ -11,13 +11,12 @@
 $(function() {
   $('body').addClass('js');
   var $menu = $('#menu'),
-      $menulink = $('.nav-toggle');
+      $menulink = $('.nav-toggle'); //animated hamburger menu
 
-  $menulink.click(function() {
-    $(this).toggleClass("open");
+  $menulink.click(function() { //when burger menu is clicked...
+    $(this).toggleClass("open"); 
     $menulink.toggleClass('active');
     $menu.toggleClass('active');
-    // $("nav").fadeToggle(100);
 
     return false;
   });

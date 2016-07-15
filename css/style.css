@@ -172,7 +172,8 @@ header {
   border-bottom: 3px solid #ff7b00;
 }*/
 
-/* Animated Hamburger Menu Icon */
+/* ========== Animated Hamburger Menu ========== */
+
 nav {
   overflow: visible;
 }
@@ -182,11 +183,12 @@ nav {
   height: 50px;
   width: 60px;
   display: block;
+  float: right;
   z-index: 102;
-  position: fixed;
+  position: relative;
   top: 25px;
   right: 19px;
-  opacity: 0.3;
+  opacity: 0.3; /* off state for burger menu */
   -webkit-transition: opacity 100ms ease-in-out;
   -moz-transition: opacity 100ms ease-in-out;
   -o-transition: opacity 100ms ease-in-out;
@@ -195,11 +197,11 @@ nav {
   white-space: nowrap;
   overflow: hidden;
 }
-.logged-in .nav-toggle {
+/*.logged-in .nav-toggle {
   top: 50px;
-}
+}*/
 .nav-toggle:hover {
-  opacity: 1;
+  opacity: 1; /* when rolled over, burger menu darkens */
 }
 .nav-toggle span,
 .nav-toggle span:before,
@@ -250,20 +252,20 @@ nav {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: rotate(45deg); /* top line rotates from L corner to bottom R */
   top: 0;
   left: 0;
-  background: #ed5a5a;
+  background: #ed5a5a; /* red */
 }
 .nav-toggle.open span:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); /* bottom line rotates from L corner to top R */
   bottom: 0;
   left: 0;
-  background: #ed5a5a;
+  background: #ff6600; /* orange */
 }
 
 /* ========== Mobile Navigation ========== */
