@@ -1,22 +1,14 @@
-
 // mobile navigation hamburger menu animation
-// $( ".nav-toggle" ).click(function() {
-//     $(this).toggleClass("open");
-//     $("nav").fadeToggle(100);
-//
-//     return false;
-// });
-
 
 $(function() {
   $('body').addClass('js');
   var $menu = $('#menu'),
-      $menulink = $('.nav-toggle'); //animated hamburger menu
+      $burger = $('.nav-toggle'); //animated hamburger menu
 
-  $menulink.click(function() { //when burger menu is clicked...
-    $(this).toggleClass("open"); 
-    $menulink.toggleClass('active');
-    $menu.toggleClass('active');
+  $burger.click(function() { //when burger menu is clicked...
+    $(this).toggleClass('open'); //nav toggle opens
+    $burger.toggleClass('active'); //burger menu goes into active state X
+    $menu.toggleClass('active'); //list menu is revealed
 
     return false;
   });
@@ -26,6 +18,15 @@ $(function() {
 
 
 
+
+
+// mobile navigation hamburger menu animation
+// $( ".nav-toggle" ).click(function() {
+//     $(this).toggleClass("open");
+//     $("nav").fadeToggle(100);
+//
+//     return false;
+// });
 
 
 

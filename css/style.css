@@ -23,9 +23,6 @@
     font-style: normal;
 }
 
-body {
-}
-
 p,
 .title {
   font-family: 'Open Sans', sans-serif;   /* Google Font */
@@ -48,12 +45,17 @@ h2 {
   line-height: 1.5;
 }
 
+h3 {
+
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+/* font style for all navigation */
 .nav-font {
   font-family: 'robotoregular', 'Open Sans', sans-serif;
   font-size: 15px;
@@ -64,32 +66,13 @@ ul {
 .section-margin {
   padding: 20px 30px;
 }
+
 /* for portfolio grid. hide for now...*/
 /*.top-shadow {
   box-shadow: 0px -1px 6px hsla(240, 2%, 8%, 0.5);
 }*/
 
 
-/* Buttons */
-
-button {
-  border: 0;
-  background: #0087cc;
-  border-radius: 4px;
-  box-shadow: 0 5px 0 #006599;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 12px 20px;
-  transition: all .1s linear;
-}
-
-button:active {
-  box-shadow: 0 2px 0 #006599;
-  transform: translateY(3px);
-}
 
 /* ========== Clear the floats ========== */
 
@@ -203,6 +186,7 @@ nav {
 .nav-toggle:hover {
   opacity: 1; /* when rolled over, burger menu darkens */
 }
+/* style for 3 lines */
 .nav-toggle span,
 .nav-toggle span:before,
 .nav-toggle span:after {
@@ -220,18 +204,20 @@ nav {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  -webkit-transition: all 100ms ease-in-out;
-  -moz-transition: all 100ms ease-in-out;
-  -o-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 .nav-toggle span {
   top: 23px;
   left: 10px;
 }
+/* top bar */
 .nav-toggle span:before {
   top: -12px;
 }
+/* bottom bar*/
 .nav-toggle span:after {
   bottom: -12px;
 }
@@ -244,9 +230,11 @@ nav {
 .nav-toggle.open {
   opacity: 1;
 }
+/* middle bar goes away */
 .nav-toggle.open span {
   background: none;
 }
+/* top bar rotates 45deg */
 .nav-toggle.open span:before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -257,6 +245,7 @@ nav {
   left: 0;
   background: #ed5a5a; /* red */
 }
+/* bottom bar rotates 45deg */
 .nav-toggle.open span:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -280,18 +269,6 @@ a {
   text-decoration: none;
 }
 
-.toggle-nav-size {
-  width: 40px;
-  height: 40px;
-}
-
-/* container for toggle menu */
-/*.menu-link {
-  color: #7aabb9;
-  float: right;
-  display: block;
-  padding: 1em;
-}*/
 .togglemenu {
   background-color: #ffffff;
   clear: both;
@@ -312,12 +289,11 @@ a {
   text-align: center; /* centers all the list items */
   margin: 0;
   padding: 0;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey; /* line at top of menu */
+  border-bottom: 1px solid lightgrey; /* line at bottom of menu */
 }
-
 .togglemenu li {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey; /* line for each list item*/
   padding: 10px 0px;
 }
 .togglemenu li a {
@@ -332,7 +308,6 @@ a {
 .togglemenu li:last-child {
   border-bottom: 0;
 }
-
 /**/
 
 
@@ -411,6 +386,26 @@ a {
 }
 
 
+/* Buttons */
+
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
 
 
 /* ========== About ========== */
