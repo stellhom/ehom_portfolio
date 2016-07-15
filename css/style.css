@@ -14,11 +14,11 @@
 
 @font-face {
     font-family: 'robotoregular';
-    src: url('../Roboto-Regular-webfont.eot');
-    src: url('../Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../Roboto-Regular-webfont.woff') format('woff'),
-         url('../Roboto-Regular-webfont.ttf') format('truetype'),
-         url('../Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -101,21 +101,34 @@ section {
   clear: both;
 }
 
-/* ========== Header ========== */
+/* ========== EH Logo ========== */
 
-header {
-  /*float: left;*/
-}
-
-.header-padding,
-.nav-padding {
-  /*padding: 0px 30px;*/
-}
 
 /* container for eh-logo */
 .title  {
   float: left;
-  padding: 0em 1em 0.5em 1em;
+  padding: 0em 1em 1em 1em;
+}
+
+/* Grow Shadow transition on eh logo */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle; /* center the shadow */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .eh-logo {
