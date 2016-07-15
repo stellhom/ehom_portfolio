@@ -47,6 +47,7 @@ h2 {
   font-size: 2rem;
   line-height: 1.5;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -171,6 +172,99 @@ header {
   border-bottom: 3px solid #ff7b00;
 }*/
 
+/* Animated Hamburger Menu Icon */
+nav {
+  overflow: visible;
+}
+
+.nav-toggle {
+  background: rgba(255, 255, 255, 0.5);
+  height: 50px;
+  width: 60px;
+  display: block;
+  z-index: 102;
+  position: fixed;
+  top: 25px;
+  right: 19px;
+  opacity: 0.3;
+  -webkit-transition: opacity 100ms ease-in-out;
+  -moz-transition: opacity 100ms ease-in-out;
+  -o-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.logged-in .nav-toggle {
+  top: 50px;
+}
+.nav-toggle:hover {
+  opacity: 1;
+}
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+  display: block;
+  cursor: pointer;
+  height: 5px;
+  width: 40px;
+  background: #384047;
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+.nav-toggle span {
+  top: 23px;
+  left: 10px;
+}
+.nav-toggle span:before {
+  top: -12px;
+}
+.nav-toggle span:after {
+  bottom: -12px;
+}
+.nav-toggle span:hover span:before {
+  top: -15px;
+}
+.nav-toggle span:hover span:after {
+  bottom: -15px;
+}
+.nav-toggle.open {
+  opacity: 1;
+}
+.nav-toggle.open span {
+  background: none;
+}
+.nav-toggle.open span:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+  background: #ed5a5a;
+}
+.nav-toggle.open span:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: 0;
+  left: 0;
+  background: #ed5a5a;
+}
 
 /* ========== Mobile Navigation ========== */
 
@@ -190,12 +284,12 @@ a {
 }
 
 /* container for toggle menu */
-.menu-link {
+/*.menu-link {
   color: #7aabb9;
   float: right;
   display: block;
   padding: 1em;
-}
+}*/
 .togglemenu {
   background-color: #ffffff;
   clear: both;
