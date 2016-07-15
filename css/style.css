@@ -124,12 +124,15 @@ section {
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
-.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
   box-shadow: 0 10px 12px -9px rgba(0, 0, 0, 0.6); /* x, y, blur, spread, color */
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
+/* size of logo */
 .eh-logo {
   width: 75px;
   height: auto;
@@ -172,7 +175,6 @@ section {
 nav {
   overflow: visible;
 }
-
 .nav-toggle {
   background: rgba(255, 255, 255, 0.5);
   height: 50px;
@@ -362,6 +364,46 @@ a {
     border: 1px solid #ff6600;
     color: #ff6600;
 	}
+
+/**/
+/* Filter buttons */
+button {
+	background-color: #d7d7d7;
+	border: none;
+	padding: 3px 20px 4px 20px;
+	border-radius: 1px;
+	color: #333;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+	font-size: 100%;}
+
+button:hover,
+button.active {
+  border: 1px solid #ff6600;
+  color: #ff6600;
+	background-color: #fff;
+	/*color: #fff;*/
+	cursor: pointer;}
+
+  #gallery {
+  	text-align: center;
+  	max-width: 1020px;
+  	margin: 0 auto;}
+
+  #gallery img {
+  	width: 300px;
+  	height: 150px;
+  	border-radius: 3px;
+  	border: 8px solid #fff;
+  	margin: 6px;
+      -webkit-box-shadow: 0 0 3px 3px #ebebeb;
+      box-shadow: 0 0 3px 3px #ebebeb;
+  	float: left;}
+
+
+/**/
+
+
 /* ========== Projects ========== */
 
 /* container for all projects */
@@ -398,9 +440,9 @@ a {
 }
 
 
-/* Buttons */
+/* Buttons that push down */
 
-button {
+/*button {
   border: 0;
   background: #0087cc;
   border-radius: 4px;
@@ -417,7 +459,7 @@ button {
 button:active {
   box-shadow: 0 2px 0 #006599;
   transform: translateY(3px);
-}
+}*/
 
 
 /* ========== About ========== */
