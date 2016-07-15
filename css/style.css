@@ -233,20 +233,21 @@ a {
   max-height: 20em;
 }
 .togglemenu ul {
+  text-align: center; /* centers all the list items */
   margin: 0;
   padding: 0;
-
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 }
+
 .togglemenu li {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid lightgrey;
   padding: 10px 0px;
 }
 .togglemenu li a {
   color: #7aabb9;
   display: block;
-  padding: 0.8em;
+  padding: 1em;
 }
 .togglemenu li:last-child {
   border-bottom: 0;
