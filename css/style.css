@@ -55,7 +55,7 @@ ul {
   padding: 0;
 }
 
-/* font style for all navigation */
+/* font style for navigation */
 .nav-font {
   font-family: 'robotoregular', 'Open Sans', sans-serif;
   font-size: 15px;
@@ -375,11 +375,10 @@ button {
   margin: 10px 20px 15px 0px;
 	border-radius: 2px;
 	color: #666;
-  /* see nav-font class for text styles */
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-	font-size: 100%;
+	font-size: 1em;
 }
-
 button:hover {
   color: #fff;
   background-color: #ff6600;
@@ -390,20 +389,49 @@ button.active {
 	background-color: #fff;
 }
 
-  #gallery {
-  	text-align: center;
-  	max-width: 1020px;
-  	margin: 0 auto;}
+  #proj-grid {
+    max-width: 100%;
+    margin: 0 auto;
 
-  #gallery img {
-  	width: 300px;
+/* removes gap between rows */
+    /*font-size: 0; */
+
+  	/*text-align: center;
+  	max-width: 1020px;
+  	margin: 0 auto;*/
+  }
+
+  /* project boxes */
+  .proj-width {
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+    float: left;
+    overflow:hidden;
+  }
+
+  .proj-wrapper {
+    overflow:hidden;
+  	position: relative;
+  	/*background: lightgrey;*/
+    /*cursor:pointer;*/
+  }
+
+  /* makes the image fit within the container */
+  #proj-grid img {
+    max-width:100%;
+    position: relative;
+    top:0;
+
+    /*width: 300px;
   	height: 150px;
   	border-radius: 3px;
   	border: 8px solid #fff;
   	margin: 6px;
       -webkit-box-shadow: 0 0 3px 3px #ebebeb;
       box-shadow: 0 0 3px 3px #ebebeb;
-  	float: left;}
+  	float: left;*/
+  }
 
 
 /**/
@@ -412,37 +440,30 @@ button.active {
 /* ========== Projects ========== */
 
 /* container for all projects */
-.proj-grid {
+/*.proj-grid {
   max-width: 100%;
   margin: 0 auto;
-  font-size: 0; /* removes gap between rows */
-}
+  font-size: 0;
+}*/
+/* removes gap between rows */
 
 /* project boxes */
-.proj-width {
+/*.proj-width {
   width: 100%;
   height: auto;
   background-color: lightblue;
   float: left;
   overflow:hidden;
-
-}
+}*/
 
 /* makes the image fit within the container */
 .project img {
   max-width:100%;
   position: relative;
   top:0;
-
 }
 
-.proj-wrapper {
-  overflow:hidden;
-	position: relative;
-	/*background: lightgrey;*/
-  /*cursor:pointer;*/
 
-}
 
 
 /* Buttons that push down */

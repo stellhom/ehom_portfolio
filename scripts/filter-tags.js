@@ -1,6 +1,6 @@
 (function() {
 
-  var $imgs = $('#gallery img');                  // Store all images
+  var $imgs = $('#proj-grid img');                  // Store all images
   var $buttons = $('#buttons');                   // Store buttons element
   var tagged = {};                                // Create tagged object
 
@@ -17,7 +17,7 @@
       });
     }
   });
-  
+
 console.log(tagged);                            // view arrays in console
 
   $('<button/>', {                                 // Create empty button
