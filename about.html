@@ -13,32 +13,26 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css"> <!-- Font Awesome! -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
   </head>
   <body>
-    <header>
 
-    </header>
-    <nav>
+    <nav class="nav-padding">
       <div class="title">
-        <img class="logo" src="images/eh-logo.svg" alt="eh design logo" />
-        <!-- <ul>
-          <li><img class="logo" src="images/eh-logo.svg" alt="eh design logo" /></li>
-          <li><h1>Estella Hom</h1></li>
-        </ul> -->
+        <a href="index.html" alt="home"><img class="eh-logo" src="images/eh-logo.svg" alt="eh design logo" /></a>
       </div>
-    <div class="navigation nav-font">
-      <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+      <a href="#menu" class="menu-link"><img class="toggle-nav-size" src="images/mobilenav-bars.png" alt="Menu" /></a>
+      <div class="togglemenu" id="menu" role="navigation">
+        <ul class="nav-font">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <article>
-      <hr />
 
       <section>
         <div class="headshot">
@@ -93,5 +87,7 @@ Since 2004, I have been using design as a medium to help businesses communicate 
         </p>
       </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+   <script src="scripts/scripts.js"></script>
   </body>
 </html>
