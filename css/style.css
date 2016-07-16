@@ -366,18 +366,20 @@ a {
 	}
 
 /**/
-/* Filter buttons */
+
+/* ========== Javascript Filter Nav buttons ========== */
+
 button {
   cursor: pointer;
   background-color: #fff;
 	border: none;
-	padding: 7px 20px 7px 20px;
-  margin: 10px 20px 15px 0px;
+	padding: 7px 10px 7px 10px;
+  margin: 10px 5px 15px 30px;
 	border-radius: 2px;
 	color: #666;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 button:hover {
   color: #fff;
@@ -389,8 +391,9 @@ button.active {
 	background-color: #fff;
 }
 
+/* main container for all projects */
   #proj-grid {
-    max-width: 100%;
+    max-width: 100%; /* for mobile */
     margin: 0 auto;
 
 /* removes gap between rows */
@@ -417,12 +420,11 @@ button.active {
     /*cursor:pointer;*/
   }
 
-  /* makes the image fit within the container */
+  /* makes the image fit within the container (targeting image tags within the main container #proj-grid) */
   #proj-grid img {
     max-width:100%;
     position: relative;
     top:0;
-
     /*width: 300px;
   	height: 150px;
   	border-radius: 3px;
@@ -439,7 +441,7 @@ button.active {
 
 /* ========== Projects ========== */
 
-/* container for all projects */
+/* container for all projects -- moved to #proj-grid */
 /*.proj-grid {
   max-width: 100%;
   margin: 0 auto;
@@ -447,21 +449,14 @@ button.active {
 }*/
 /* removes gap between rows */
 
-/* project boxes */
-/*.proj-width {
-  width: 100%;
-  height: auto;
-  background-color: lightblue;
-  float: left;
-  overflow:hidden;
-}*/
 
-/* makes the image fit within the container */
-.project img {
+
+/* makes the image fit within the container -- moved to #proj-grid img*/
+/*.project img {
   max-width:100%;
   position: relative;
   top:0;
-}
+}*/
 
 
 
