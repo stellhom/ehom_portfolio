@@ -325,9 +325,6 @@ a {
 /**/
 
 
-
-
-
 /* ========== Javascript Filter Nav buttons ========== */
 
 button {
@@ -397,25 +394,6 @@ button.active {
 
 
 /**/
-
-/* container for all projects -- moved to #proj-grid */
-/*.proj-grid {
-  max-width: 100%;
-  margin: 0 auto;
-  font-size: 0;
-}*/
-/* removes gap between rows */
-
-
-
-/* makes the image fit within the container -- moved to #proj-grid img*/
-/*.project img {
-  max-width:100%;
-  position: relative;
-  top:0;
-}*/
-
-
 
 
 /* Buttons that push down */
