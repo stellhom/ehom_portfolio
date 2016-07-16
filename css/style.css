@@ -325,9 +325,15 @@ a {
 /**/
 
 
-/* ========== Javascript Filter Nav buttons ========== */
+/* ========== Filter Nav buttons ========== */
 
-button {
+#filters ul {
+  display: inline;
+  list-style-type: none;
+
+}
+
+.button a {
   cursor: pointer;
   background-color: #fff;
 	border: none;
@@ -339,15 +345,50 @@ button {
   text-transform: uppercase;
 	font-size: 0.9em;
 }
-button:hover {
-  color: #fff;
-  background-color: #ff6600;
-}
-button.active {
+
+.button a.current {
   border: 1px solid #ff6600;
   color: #ff6600;
 	background-color: #fff;
 }
+.button:hover {
+  color: #fff;
+  background-color: #ff6600;
+}
+.button.active {
+  border: 1px solid #ff6600;
+  color: #ff6600;
+	background-color: #fff;
+}
+
+/* Isotope Styles */
+
+.isotope-item {
+   z-index: 2;
+}
+.isotope-hidden.isotope-item {
+   pointer-events: none;
+   z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+ /* change duration value to whatever you like */
+
+   -webkit-transition-duration: 0.8s;
+   -moz-transition-duration: 0.8s;
+   transition-duration: 0.8s;
+}
+.isotope {
+   -webkit-transition-property: height, width;
+   -moz-transition-property: height, width;
+   transition-property: height, width;
+}
+.isotope .isotope-item {
+   -webkit-transition-property: -webkit-transform, opacity;
+   -moz-transition-property: -moz-transform, opacity;
+   transition-property: transform, opacity;
+}
+
 
 /* ========== Projects ========== */
 
@@ -368,6 +409,7 @@ button.active {
     background-color: lightblue;
     float: left;
     overflow:hidden;
+
   }
 
   .proj-wrapper {

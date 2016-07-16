@@ -48,64 +48,149 @@
       </section>
 
       <section>
-      <div id="buttons"></div>  <!-- javascript variable for proj filter navigation -->
+      <!-- <div id="buttons"></div> -->
+      <!-- javascript variable for proj filter navigation -->
+
+      <ul id="filters">
+        <li class="button"><a href="#" data-filter="*" class="current">show all</a></li>
+        <li class="button"><a href="#" data-filter=".print" >print</a></li>
+        <li class="button"><a href="#" data-filter=".identity">identity</a></li>
+        <li class="button"><a href="#" data-filter=".web">web</a></li>
+        <li class="button"><a href="#" data-filter=".packaging">packaging</a></li>
+      </ul>
+      <div id="proj-grid">  <!-- JS variable, Main project grid container begins -->
+        <!-- ALL PROJECTS GO BELOW -->
+        <div class="proj-width identity web">
+          <div class="proj-wrapper">
+            <img src="images/proj-grid/link-homkitchen.jpg" alt="Hom Kitchen" />
+          </div>
+        </div> <!-- end of proj-width -->
+
+        <div class="proj-width identity">
+          <div class="proj-wrapper">
+            <img src="images/proj-grid/link-okcvanlogo.png" alt="OKC Vancouver" />
+          </div>
+        </div><!-- end of proj-width -->
+
+        <div class="proj-width print identity web">
+          <div class="proj-wrapper">
+            <img src="images/proj-grid/link-clubz.png" alt="Clubz Fitness" />
+          </div>
+        </div><!-- end of proj-width -->
+
+        <div class="proj-width identity web">
+          <div class="proj-wrapper">
+            <img src="images/proj-grid/link-funkrobertsfitness.png" alt="Funk Roberts Fitness" />
+          </div>
+        </div><!-- end of proj-width -->
+
+        <div class="proj-width print">
+          <div class="proj-wrapper">
+            <img src="images/proj-grid/link-evagary.jpg" alt="Eva + Gary Wedding Invitations" />
+          </div>
+        </div><!-- end of proj-width -->
+
+        <div class="proj-width identity print">
+          <div class="proj-wrapper">
+            <a href=""><img src="images/proj-grid/link-ryandunphy.jpg" alt="Ryan Dunphy" /></a>
+          </div>
+        </div><!-- end of proj-width -->
+
+        <div class="proj-width print identity">
+          <div class="proj-wrapper">
+            <img src="images/proj-grid/link-clavicleclash.png" alt="Clavicle Clash" />
+          </div>
+        </div><!-- end of proj-width -->
+
+        <div class="proj-width print">
+          <div class="proj-wrapper">
+            <img src="images/proj-grid/link-kettleworx.png" alt="Kettleworx" />
+          </div>
+        </div><!-- end of proj-width -->
+
+        <div class="proj-width identity">
+          <div class="proj-wrapper">
+            <img src="images/proj-grid/link-japankbclub.jpg" alt="Japan Kettlebell Club" />
+          </div>
+        </div><!-- end of proj-width -->
+
+        <div class="proj-width identity print">
+          <div class="proj-wrapper">
+            <a href=""><img src="images/proj-grid/link-ryandunphy.jpg" alt="Ryan Dunphy" /></a>
+          </div>
+        </div><!-- end of proj-width -->
+
+      </div> <!-- end of #proj-grid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div id="proj-grid">  <!-- JS variable, Main project grid container begins -->
     <!-- ALL PROJECTS GO BELOW -->
-    <div class="proj-width">
+    <div class="proj-width identity web">
       <div class="proj-wrapper">
         <img src="images/proj-grid/link-homkitchen.jpg" data-tags="Identity,Web" alt="Hom Kitchen" />
       </div>
     </div> <!-- end of proj-width -->
 
-    <div class="proj-width">
+    <div class="proj-width identity">
       <div class="proj-wrapper">
         <img src="images/proj-grid/link-okcvanlogo.png" data-tags="Identity" alt="OKC Vancouver" />
       </div>
     </div><!-- end of proj-width -->
 
-    <div class="proj-width">
+    <div class="proj-width print identity web">
       <div class="proj-wrapper">
         <img src="images/proj-grid/link-clubz.png" data-tags="Print,Identity,Web" alt="Clubz Fitness" />
       </div>
     </div><!-- end of proj-width -->
 
-    <div class="proj-width">
+    <div class="proj-width identity web">
       <div class="proj-wrapper">
         <img src="images/proj-grid/link-funkrobertsfitness.png" data-tags="Identity,Web" alt="Funk Roberts Fitness" />
       </div>
     </div><!-- end of proj-width -->
 
-    <div class="proj-width">
+    <div class="proj-width print">
       <div class="proj-wrapper">
         <img src="images/proj-grid/link-evagary.jpg" data-tags="Print" alt="Eva + Gary Wedding Invitations" />
       </div>
     </div><!-- end of proj-width -->
 
-    <div class="proj-width">
+    <div class="proj-width identity print">
       <div class="proj-wrapper">
         <a href=""><img src="images/proj-grid/link-ryandunphy.jpg" data-tags="Identity,Print" alt="Ryan Dunphy" /></a>
       </div>
     </div><!-- end of proj-width -->
 
-    <div class="proj-width">
+    <div class="proj-width print identity">
       <div class="proj-wrapper">
         <img src="images/proj-grid/link-clavicleclash.png" data-tags="Print,Identity" alt="Clavicle Clash" />
       </div>
     </div><!-- end of proj-width -->
 
-    <div class="proj-width">
+    <div class="proj-width print">
       <div class="proj-wrapper">
         <img src="images/proj-grid/link-kettleworx.png" data-tags="Print" alt="Kettleworx" />
       </div>
     </div><!-- end of proj-width -->
 
-    <div class="proj-width">
+    <div class="proj-width identity">
       <div class="proj-wrapper">
         <img src="images/proj-grid/link-japankbclub.jpg" data-tags="Identity" alt="Japan Kettlebell Club" />
       </div>
     </div><!-- end of proj-width -->
 
-    <div class="proj-width">
+    <div class="proj-width identity print">
       <div class="proj-wrapper">
         <a href=""><img src="images/proj-grid/link-ryandunphy.jpg" data-tags="Identity,Print" alt="Ryan Dunphy" /></a>
       </div>
@@ -137,9 +222,11 @@
      <script src="scripts/jquery-3.1.0.min.js"></script> <!-- jQuery library production version -->
      <!-- <script src="http://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script> -->
      <script src="scripts/burgermenu.js"></script> <!-- script for burger navigation -->
-     <script src="scripts/filter-tags.js"></script> <!-- script for the project filter function -->
-     <script src="scripts/masonry.pkgd.min.js"></script> <!-- masonry grid layout .js file -->
+     <script src="scripts/masonry.pkgd.min.js"></script> <!-- Masonry grid layout plugin -->
      <script src="scripts/masonry-grid.js"></script> <!-- calls on masonry -->
+     <script src="scripts/isotope.pkgd.min.js"></script> <!-- Isotope plugin for filtering -->
+     <script src="scripts/isotope-filter.js"></script> <!-- script for the project filter function -->
+<script src="scripts/filter-tags.js"></script>
 
   </body>
 </html>
