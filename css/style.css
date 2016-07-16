@@ -326,46 +326,7 @@ a {
 
 
 
-/* ========== Project Filter ========== */
 
-.proj-filter {
-  margin-bottom: 20px;
-  /*display: flex;
-  justify-content: center;*/
-}
-
-/*.proj-nav {
-  display: inline;
-  padding: 0px 10px;
-}*/
-
-.filters {
-	margin:1%;
-	padding:0;
-	list-style:none;
-}
-
-	.filters li {
-		float:left;
-	}
-
-	.filters li span {
-		display: inline;
-		padding:5px 30px;
-		text-decoration:none;
-    text-transform: uppercase;
-		color:#666;
-		cursor: pointer;
-	}
-
-	.filters li span.active {
-		/*background: #e95a44;*/
-    /*color:#fff;*/
-    border: 1px solid #ff6600;
-    color: #ff6600;
-	}
-
-/**/
 
 /* ========== Javascript Filter Nav buttons ========== */
 
