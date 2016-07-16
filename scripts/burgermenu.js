@@ -15,18 +15,6 @@ $(function() {
 });
 
 
- // use masonry as a jQuery plugin
-//
-// $('#proj-grid').masonry({
-//   // options
-//   itemSelector: '.proj-width',
-//   columnWidth: 100%
-// });
-
-
-
-
-
 
 
 // mobile navigation hamburger menu animation
