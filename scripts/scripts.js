@@ -15,13 +15,15 @@ $(function() {
 });
 
 
-//  masonry grid
-
-// $('.grid').masonry({
+ // use masonry as a jQuery plugin
+//
+// $('#proj-grid').masonry({
 //   // options
-//   itemSelector: '.grid-item',
-//   columnWidth: 200
+//   itemSelector: '.proj-width',
+//   columnWidth: 100%
 // });
+
+
 
 
 
