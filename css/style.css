@@ -391,14 +391,13 @@ button.active {
 	background-color: #fff;
 }
 
+/* ========== Projects ========== */
+
 /* main container for all projects */
   #proj-grid {
-    max-width: 100%; /* for mobile */
-    margin: 0 auto;
-
-/* removes gap between rows */
-    /*font-size: 0; */
-
+    max-width: 100%; /* content will fill whole width of screen*/
+    margin: 0 auto; /* center */
+    font-size: 0; /* removes gap between rows */
   	/*text-align: center;
   	max-width: 1020px;
   	margin: 0 auto;*/
@@ -406,7 +405,7 @@ button.active {
 
   /* project boxes */
   .proj-width {
-    width: 100%;
+    width: 100%; /* for mobile */
     height: auto;
     background-color: lightblue;
     float: left;
@@ -437,9 +436,6 @@ button.active {
 
 
 /**/
-
-
-/* ========== Projects ========== */
 
 /* container for all projects -- moved to #proj-grid */
 /*.proj-grid {
