@@ -1,4 +1,4 @@
-// Used Isotope plugin for filtering projects
+// Using Isotope plugin for filtering projects
 $(document).ready(function() {
     var $container = $('#proj-grid');
     $container.isotope({
