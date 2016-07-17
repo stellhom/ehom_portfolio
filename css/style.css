@@ -468,26 +468,29 @@ button:active {
 /* ========== CONTACT FORM ========== */
 
 .contact-form {
-  width: 100%;
-  margin: 20px 0px;
+  max-width: 100%;
+  margin: 10px 0px;
   /*margin: 20px auto 20px;*/
   /*padding: 20px;*/
 }
 
 .contact-form > div {
-  margin: 20px 0px 20px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
-/*label {
+label p {
+  font-size: 1rem;
+  line-height: 0.1rem;
+}
+label {
   color: #262873;
-  font-weight: bold;
 }
 
-label[for="vis-name"],
-label[for="vis-email"],
-label[for="comment"] {
+label[for="name"],
+label[for="email"],
+label[for="message"] {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 input[type="text"],
@@ -496,6 +499,7 @@ textarea {
   border: 1px solid #c8c8c8;
   color: #464646;
   font-size: 16px;
+  line-height: 1.25;
 }
 
 input[type="text"]:focus,
@@ -509,68 +513,74 @@ textarea:focus {
 input[type="text"],
 textarea {
   display: block;
-  padding: 5px 8px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 4px;
 }
 
 input[type="text"] {
-  width: 95%;
+  width: 100%;
 }
 
 textarea {
-  width: 95%;
+  width: 100%;
+}
+
+/* Buttons */
+
+input[type="submit"] {
+  display: block;
+  font-family: 'Open Sans', sans-serif;   /* Google Font */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  background-color: orangered;
+  background-image: linear-gradient(
+      180deg, #ff6f02 0%, #ff6f02 20%, #fc4902 100%
+   );
+  padding: 10px 15px;
+  border: 0px;
+  width: 185px;
+  text-shadow: 2px 2px 5px hsla(19, 91%, 25%, 0.75);
+  box-shadow: 2px 2px 6px 0px #888888; /*X offset, Y offset, blur radius, spread radius (optional), colour*/
+}
+
+input[type="submit"]:hover {
+  /*background-color: #10a31a;*/
+  background-image: linear-gradient(
+      180deg, #10a31a 0%, #10a31a 20%, #097510 100%
+   );
+}
+/*
+button:active,
+input[type="submit"]:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);*/
+
+/* Buttons that push down */
+
+/*button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
 }*/
 
-label {
-    display:block;
-    margin-top:20px;
-    letter-spacing:2px;
-}
 
-/* Centre the form within the page */
-form {
-    margin:0 auto;
-    width:459px;
-}
-
-/* Style the text boxes */
-input, textarea {
-	width:439px;
-	height:27px;
-	background:#efefef;
-	border:1px solid #dedede;
-	padding:10px;
-	margin-top:3px;
-	font-size:0.9em;
-	color:#3a3a3a;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  border-radius:5px;
-}
-
-textarea {
-	height:213px;
-	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
-}
-
-/*subtle blue border when they are currently selected*/
-input:focus, textarea:focus {
-    border:1px solid #97d6eb;
-}
-
-#submit {
-    width:127px;
-    height:38px;
-    background:url(images/submit.jpg);
-    text-indent:-9999px;
-    border:none;
-    margin-top:20px;
-    cursor:pointer;
-}
-
-	#submit:hover {
-	    opacity:.9;
-	}
 
 /* ========== Footer ========== */
 
