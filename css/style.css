@@ -24,7 +24,8 @@
 }
 
 p,
-.title {
+.title,
+label {
   font-family: 'Open Sans', sans-serif;   /* Google Font */
   font-size: 16px;
   color: #666;
@@ -487,25 +488,25 @@ button:active {
   margin: 10px 0px 10px 0px;
 }
 
-label p {
-  font-size: 1rem;
-  line-height: 0.1rem;
-}
 label {
-  color: #262873;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 14px 0px 0px 0px;
+
 }
 
 label[for="name"],
 label[for="email"],
 label[for="message"] {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 input[type="text"],
 select,
 textarea {
   border: 1px solid #c8c8c8;
+  margin: 10px 0px;
   color: #464646;
   font-size: 16px;
   line-height: 1.25;
@@ -542,7 +543,7 @@ input[type="submit"] {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 3px;
+  border-radius: 4px;
   color: white;
   cursor: pointer;
   background-color: orangered;

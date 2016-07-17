@@ -18,7 +18,7 @@
   <body>
     <nav class="nav-padding">
       <div class="title">
-        <a href="index.html" alt="home"><img class="eh-logo hvr-grow-shadow" src="images/eh-logo.svg" alt="eh design logo" /></a>
+        <a href="index.html"><img class="eh-logo hvr-grow-shadow" src="images/eh-logo.svg" alt="eh design logo" /></a>
       </div>
       <a href="#menu" class="nav-toggle"><span></span>Menu</a>
 
@@ -34,23 +34,17 @@
     <article>
       <section class="section-margin">
           <h1>Get In Touch</h1><br />
-          <p>Contact me via the contact form below or email me at <a class="hover-orange" href="mailto:me@estellahom.com">estellahom@gmail.com</a></p>
+          <!-- <p>Contact me via the contact form below or email me at <a class="hover-orange" href="mailto:me@estellahom.com">estellahom@gmail.com</a></p> -->
 
           <form class="contact-form" method="post" action="scripts/contact-form.php">
-          	<label for="name">
-              <p>Name:</p>
+          	<label for="name">Name:</label>
               <input type="text" name="name" id="name" />
-            </label>
 
-          	<label for="email">
-              <p>Email:</p>
+          	<label for="email">Email:</label>
           		<input type="text" name="email" id="email" />
-            </label>
 
-          	<label for="message">
-              <p>Message:</p>
+          	<label for="message">Message:</label>
               <textarea name="message" rows="8" cols="20" id="message"></textarea>
-            </label>
 
             <input type="submit" name="submit" value="Submit" class="submit-button" />
           </form>
@@ -74,9 +68,5 @@
   <!-- scripts always go before closing body tag -->
       <script src="scripts/jquery-3.1.0.min.js"></script> <!-- jQuery library production version -->
       <script src="scripts/burgermenu.js"></script>
-      <script src="scripts/masonry.pkgd.min.js"></script> <!-- Masonry grid layout plugin -->
-      <script src="scripts/masonry-grid.js"></script> <!-- calls on masonry -->
-      <script src="scripts/isotope.pkgd.min.js"></script> <!-- Isotope plugin for filtering -->
-      <script src="scripts/isotope-filter.js"></script> <!-- script for the project filter function -->
     </body>
   </html>
