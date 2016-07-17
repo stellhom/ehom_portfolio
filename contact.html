@@ -13,7 +13,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css"> <!-- Font Awesome! -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <script src="scripts/gen_validatorv31.js"></script>
+
   </head>
   <body>
     <nav class="nav-padding">
@@ -36,7 +38,7 @@
           <h1>Get In Touch</h1><br />
           <!-- <p>Contact me via the contact form below or email me at <a class="hover-orange" href="mailto:me@estellahom.com">estellahom@gmail.com</a></p> -->
 
-          <form class="contact-form" method="post" action="scripts/contact-form.php">
+          <form class="contact-form" method="post" action="scripts/contact-form.php" name="emailform">
           	<label for="name">Name:</label>
               <input type="text" name="name" id="name" />
 
@@ -68,5 +70,12 @@
   <!-- scripts always go before closing body tag -->
       <script src="scripts/jquery-3.1.0.min.js"></script> <!-- jQuery library production version -->
       <script src="scripts/burgermenu.js"></script>
+      <script>
+    var frmvalidator  = new Validator("emailform");
+    frmvalidator.addValidation("name","req","Please provide your name.");
+    frmvalidator.addValidation("email","req","Please provide your email.");
+    frmvalidator.addValidation("message","req","Please write a message.");
+    frmvalidator.addValidation("email","email","Please enter a valid email address.");
+  </script>
     </body>
   </html>
