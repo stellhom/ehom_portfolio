@@ -316,11 +316,8 @@ a {
 .togglemenu li:last-child {
   border-bottom: 0;
 }
-/**/
-
 
 /* ========== Filter Nav buttons ========== */
-
 
 #filters li {
   display: inline;
@@ -342,7 +339,6 @@ font-size: 0.9em;
 	border-radius: 2px;
 	color: #666;
 }
-
 .button a.current {
   border: 1px solid #ff6600;
   color: #ff6600;
@@ -358,7 +354,7 @@ font-size: 0.9em;
 	background-color: #fff;
 }
 
-/* Isotope Styles */
+/* ========== Isotope Styles ========== */
 
 .isotope-item {
    z-index: 2;
@@ -406,9 +402,7 @@ font-size: 0.9em;
     background-color: lightblue;
     float: left;
     overflow:hidden;
-
   }
-
   .proj-wrapper {
     overflow:hidden;
   	position: relative;
@@ -463,7 +457,6 @@ button:active {
   /*display: flex;
   flex-direction: row;
   justify-content: center;*/
-
 }
 
 .width100percent {
@@ -485,7 +478,7 @@ button:active {
   margin: 20px 0px 20px 0px;
 }
 
-label {
+/*label {
   color: #262873;
   font-weight: bold;
 }
@@ -526,8 +519,58 @@ input[type="text"] {
 
 textarea {
   width: 95%;
+}*/
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
 }
 
+/* Centre the form within the page */
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+/* Style the text boxes */
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+textarea {
+	height:213px;
+	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+/*subtle blue border when they are currently selected*/
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+#submit {
+    width:127px;
+    height:38px;
+    background:url(images/submit.jpg);
+    text-indent:-9999px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+	#submit:hover {
+	    opacity:.9;
+	}
 
 /* ========== Footer ========== */
 
@@ -535,7 +578,7 @@ footer {
   clear: both;
   display: flex;
   flex-direction: column;
-  background-color: #4c4c4c;
+  background-color: #494949;
   /*background-color: hsl(196, 15%, 10%);*/
   padding: 5% 20%;
 
@@ -556,7 +599,7 @@ footer {
   padding: 0px 15px;
   margin-bottom: 20px;
   margin-top: 20px;
-  text-shadow: 2px 2px 5px hsla(125, 32%, 24%, 0.75); /* adds dropshadow to text! */
+  text-shadow: 2px 2px 3px hsla(0, 2%, 20%, 0.75); /* adds dropshadow to text! */
 }
 
 .social li a {
@@ -564,16 +607,17 @@ footer {
 }
 
 .social li a:hover {
-  color: #cdf7d9;
+  color: #ff8c35;
 }
 .copyright {
   text-align: center;
 }
 
 .footer-text {
-  font-family: 'robotoregular', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 2px 2px 3px hsla(0, 2%, 20%, 0.75);
   font-size: 15px;
-  color: lightgrey;
+  color: #f7f4f4;
   line-height: 1.5;
 }
 

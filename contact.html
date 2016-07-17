@@ -37,6 +37,23 @@
         <div>
           <h1>Get In Touch</h1><br />
           <p>Contact me via the contact form below or email me at <a class="hover-orange" href="mailto:me@estellahom.com">estellahom@gmail.com</a></p>
+
+          <form method="post" action="scripts/email-form.php">
+
+              <label>Name</label>
+              <input name="name" placeholder="Type Here">
+
+              <label>Email</label>
+              <input name="email" type="email" placeholder="Type Here">
+
+              <label>Message</label>
+              <textarea name="message" placeholder="Type Here"></textarea>
+
+              <input id="submit" name="submit" type="submit" value="Submit">
+
+          </form>
+
+
           <form class="contact-form" action="email-comments.php" method="post" name="emailform">
             <label>
               <p>Your Name:</p>
