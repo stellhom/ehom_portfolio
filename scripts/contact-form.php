@@ -1,12 +1,12 @@
 <?php
 
-$EmailFrom = "estellahom@gmail.com";
-$EmailTo = "estellahom@gmail.com";
-$Subject = "You've got mail!";
-$Name = Trim(stripslashes($_POST['name']));
+$emailFrom = "estellahom@gmail.com";
+$emailTo = "estellahom@gmail.com";
+$subject = "You've got mail!";
+$name = Trim(stripslashes($_POST['name']));
 // $Tel = Trim(stripslashes($_POST['Tel']));
-$Email = Trim(stripslashes($_POST['email']));
-$Message = Trim(stripslashes($_POST['message']));
+$email = Trim(stripslashes($_POST['email']));
+$message = Trim(stripslashes($_POST['message']));
 
 // validation
 $validationOK=true;
@@ -16,23 +16,23 @@ if (!$validationOK) {
 }
 
 // prepare email body text
-$Body = "";
-$Body .= "name: ";
-$Body .= $name;
-$Body .= "\n";
-// $Body .= "Tel: ";
-// $Body .= $Tel;
-// $Body .= "\n";
-$Body .= "email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "\n";
-$Body .= "message: ";
-$Body .= $message;
-$Body .= "\n";
+$body = "";
+$body .= "Name: ";
+$body .= $name;
+$body .= "\n";
+// $body .= "Tel: ";
+// $body .= $Tel;
+// $body .= "\n";
+$body .= "Email: ";
+$body .= $email;
+$body .= "\n";
+$body .= "\n";
+$body .= "Message: ";
+$body .= $message;
+$body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+$success = mail($emailTo, $subject, $body, "From: <$emailFrom>");
 
 // redirect to success page
 if ($success){

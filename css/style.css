@@ -28,15 +28,24 @@ p,
   font-family: 'Open Sans', sans-serif;   /* Google Font */
   font-size: 16px;
   color: #666;
-  line-height: 1.75;
+  line-height: 1.5;
   padding: 8px 0px 20px 0px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1 strong {
+  font-weight: bold;
+  color: #ff7b00;
 }
 
 h1 {
   font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
   font-size: 3rem;
-  line-height: 1.5;
-  padding-bottom: 20px;
+  line-height: 1.25;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -55,6 +64,10 @@ ul {
   padding: 0;
 }
 
+.center {
+  text-align: center;
+}
+
 /* font style for navigation */
 .nav-font {
   font-family: 'robotoregular', 'Open Sans', sans-serif;
@@ -65,8 +78,6 @@ ul {
 .section-margin {
   padding: 20px 30px;
 }
-
-
 
 /* ========== Clear the floats ========== */
 
@@ -81,11 +92,9 @@ ul {
   content: "";
   display: table;
 }
-
 .clearfix:after {
   clear: both;
 }
-
 .clearfix {
   zoom: 1; // supports ie 6/7
 }*/
@@ -525,6 +534,7 @@ textarea {
   width: 100%;
 }
 
+
 /* Buttons */
 
 input[type="submit"] {
@@ -580,7 +590,50 @@ button:active {
   transform: translateY(3px);
 }*/
 
+/* Thank you page */
 
+.ty-text h1 {
+  line-height: 0.9;
+}
+.ty-text a {
+  color: #666;
+}
+
+.ty-text a:hover {
+  color: #ff7b00;
+}
+
+/* Tooltip for contact thank you page */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 60%;
+    font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
+    line-height: 1.25;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px #934848;
+    background-color: #fc5f5f;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    right: 70%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 /* ========== Footer ========== */
 
@@ -591,18 +644,15 @@ footer {
   background-color: #494949;
   /*background-color: hsl(196, 15%, 10%);*/
   padding: 5% 20%;
-
 }
 
 .social {
   display: flex;
   justify-content: space-around;
 }
-
 .social ul {
   text-align: center;
 }
-
 .social li {
   display: inline-block;
   list-style-type: none;
@@ -611,11 +661,9 @@ footer {
   margin-top: 20px;
   text-shadow: 2px 2px 3px hsla(0, 2%, 20%, 0.75); /* adds dropshadow to text! */
 }
-
 .social li a {
   color: white;
 }
-
 .social li a:hover {
   color: #ff8c35;
 }
@@ -656,12 +704,18 @@ footer {
 
 
 
-
 }
 
 /* ========== Media Queries for 720px ========== */
 
 @media screen and (min-width:720px) {
+
+  /* increase font size, line height, padding */
+  h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
 
   /* container for eh-logo */
   .title  {
