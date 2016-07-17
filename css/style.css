@@ -354,7 +354,7 @@ font-size: 0.9em;
   color: #ff6600;
 	background-color: #fff;
 }
-.button:hover {
+.button a:hover {
   color: #fff;
   background-color: #ff6600;
 }
@@ -710,6 +710,8 @@ footer {
 /* ========== Media Queries for 720px ========== */
 
 @media screen and (min-width:720px) {
+
+
 
   /* increase font size, line height, padding */
   h1 {
