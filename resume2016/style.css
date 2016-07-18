@@ -1,0 +1,109 @@
+body {
+  margin: 50px 80px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  color: grey;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1 {
+  background-color: white;
+  padding: 20px;
+  color: black;
+  font-size: 60px;
+  font-family: helvetica, arial, sans-serif;
+  font-style: bold;
+  line-height: 1.15;
+}
+
+h2 {
+  color: darkturquoise;
+  font-size: 30px;
+  /* type your titles in lowercase then use css to make it uppercase - better for screenreaders and SEO */
+  text-transform: uppercase;
+  font-family: helvetica, arial, sans-serif;
+  padding: 0 15px 0 15px;
+}
+
+
+#description {
+  font-size: 30px;
+  padding: 0 15px 0 15px;
+}
+
+.subhead-line {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 4px solid lightgrey;
+}
+ul {
+  list-style-type: circle;
+}
+
+li {
+  color: grey;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.title-date {
+line-height: 1.15;
+padding: 0 15px 0 15px;
+}
+
+.title {
+  color: hotpink;
+}
+
+.content {
+  margin-left: 80px;
+  padding-bottom: 1px;
+}
+
+.divider-rule {
+  padding-top: 30px;
+  border-top: 1px lightgrey solid;
+}
+
+.references {
+  font-size: 20px;
+  padding: 0 15px 0 15px;
+}
+.contact {
+  font-size: 16px;
+  padding: 0 15px 0 15px;
+}
+.align-left {
+  float: left;
+}
+.align-right {
+  float: right;
+}
+/* unvisited link */
+a:link {
+    color: darkturquoise;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: hotpink;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+    background-color: yellow;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: black;
+    text-decoration:line-through;
+}

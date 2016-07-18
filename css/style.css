@@ -26,10 +26,12 @@
 p,
 .title,
 label {
-  font-family: 'Open Sans', sans-serif;   /* Google Font */
+  /*font-family: 'Open Sans', sans-serif;   */
+font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   color: #666;
-  line-height: 1.5;
+  line-height: 1.75;
   padding: 8px 0px 20px 0px;
 }
 
@@ -44,15 +46,16 @@ h1 strong {
 
 h1 {
   font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.25;
   padding-bottom: 8px;
 }
 
 h2 {
   font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
-  font-size: 2rem;
-  line-height: 1.5;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  padding-bottom: 8px;
 }
 
 h3 {
@@ -107,10 +110,11 @@ section {
 
 /* ========== EH Logo ========== */
 
+
 /* container for eh-logo */
 .title  {
   float: left;
-  padding: 0em 1em 1em 1em;
+  padding: 0em 1em 1em 0em;
 }
 
 /* Grow Shadow transition on eh logo */
@@ -140,6 +144,7 @@ section {
 .eh-logo {
   width: 75px;
   height: auto;
+
 }
 
 /* ========== Navigation ========== */
@@ -376,7 +381,6 @@ font-size: 0.9em;
 .isotope,
 .isotope .isotope-item {
  /* change duration value to whatever you like */
-
    -webkit-transition-duration: 0.8s;
    -moz-transition-duration: 0.8s;
    transition-duration: 0.8s;
@@ -435,10 +439,6 @@ font-size: 0.9em;
   	float: left;*/
   }
 
-
-/**/
-
-
 /* Buttons that push down */
 
 /*button {
@@ -469,11 +469,77 @@ button:active {
   justify-content: center;*/
 }
 
+.img-row {
+  width: 100%;
+  height: auto;
+  display: block;
+   box-shadow: 0px 0px 15px 0px hsla(240, 2%, 10%, 0.9); /* originally didnt work...but works now since adding in the .img-row:after pseudo class */
+}
+.photo-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  height: 400px;
+  padding:20px;
+  /*border: 8px solid #e0dede;*/
+  margin: 20px 0px;
+  background-size: cover;
+}
+.resume-link {
+  background: url(../images/eh-headshot.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .width100percent {
   width: 100%;
   height: auto;
   display: block;
 }
+
+
+/* ========== Services ========== */
+
+/* main container for all services */
+.services-container {
+  max-width: 100%;
+  /*height: auto;*/
+  list-style-type: none;
+  /*display: flex;
+  flex-direction: row;*/
+}
+
+/* service box */
+.service {
+  max-width: 100%; /* so that the box will be centered in the container */
+  height: auto;
+  padding: 25px;
+  margin: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.services-container p {
+  font-size: 15px;
+}
+
+/* icon above service description */
+.service-icon {
+  padding: 10px;
+  color: #ff7b00;
+}
+
+.service h2 {
+  padding-bottom: 0px;
+}
+/*.service a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ff7b00;
+
+}*/
 
 /* ========== CONTACT FORM ========== */
 
@@ -718,6 +784,11 @@ footer {
     padding-bottom: 16px;
   }
 
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    padding-bottom: 16px;
+  }
   /* container for eh-logo */
   .title  {
     padding: 0em 2em 0.5em 2em;
@@ -758,6 +829,32 @@ footer {
       /* Position the tooltip */
       right: 70%;
   }
+
+  /* main container for all services */
+  .services-container {
+    max-width: 100%;
+    /*height: auto;*/
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* service box */
+  .service {
+    width: 33%;
+    height: auto;
+    padding: 25px;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+
+  .service h2 {
+    padding-bottom: 8px;
+  }
+
 
 }
 /* end min width 720px */
