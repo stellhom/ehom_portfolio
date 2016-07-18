@@ -1,6 +1,7 @@
 // jQuery to set up Masonry using document.ready function
 
 $(document).ready(function() {
+  console.log( "ready!" );
 $('#proj-grid').masonry({
 // columnWidth: 320,
 itemSelector: '.proj-width'

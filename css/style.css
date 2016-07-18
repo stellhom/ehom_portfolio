@@ -12,17 +12,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'robotoregular';
-    src: url('../fonts/Roboto-Regular-webfont.eot');
-    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
-         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 p,
 .title,
 label {
@@ -74,7 +63,7 @@ ul {
 
 /* font style for navigation */
 .nav-font {
-  font-family: 'robotoregular', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -109,7 +98,6 @@ section {
 }
 
 /* ========== EH Logo ========== */
-
 
 /* container for eh-logo */
 .title  {
@@ -203,9 +191,7 @@ nav {
   white-space: nowrap;
   overflow: hidden;
 }
-/*.logged-in .nav-toggle {
-  top: 50px;
-}*/
+
 .nav-toggle:hover {
   opacity: 1; /* when rolled over, burger menu darkens */
 }
@@ -434,36 +420,7 @@ font-size: 0.9em;
     max-width:100%;
     position: relative;
     top:0;
-    /*width: 300px;
-  	height: 150px;
-  	border-radius: 3px;
-  	border: 8px solid #fff;
-  	margin: 6px;
-      -webkit-box-shadow: 0 0 3px 3px #ebebeb;
-      box-shadow: 0 0 3px 3px #ebebeb;
-  	float: left;*/
   }
-
-/* Buttons that push down */
-
-/*button {
-  border: 0;
-  background: #0087cc;
-  border-radius: 4px;
-  box-shadow: 0 5px 0 #006599;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 12px 20px;
-  transition: all .1s linear;
-}
-
-button:active {
-  box-shadow: 0 2px 0 #006599;
-  transform: translateY(3px);
-}*/
 
 
 /* ========== About ========== */
@@ -485,14 +442,14 @@ button:active {
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  height: 400px;
+  height: 500px;
   padding:20px;
   /*border: 8px solid #e0dede;*/
   margin: 20px 0px;
   background-size: cover;
 }
 .resume-link {
-  background: url(../images/eh-headshot.jpg) no-repeat;
+  background: url(../images/eh-cypress.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -568,6 +525,7 @@ label {
 
 label[for="name"],
 label[for="email"],
+label[for="message-type"]
 label[for="message"] {
   display: block;
   margin-bottom: 10px;
@@ -577,7 +535,7 @@ input[type="text"],
 select,
 textarea {
   border: 1px solid #c8c8c8;
-  margin: 10px 0px;
+  margin: 10px 0px 15px 0px;
   color: #464646;
   font-size: 16px;
   line-height: 1.25;
@@ -773,7 +731,6 @@ footer {
   .proj-width {
     width: 50%;
   }
-
 
 
 }
