@@ -131,8 +131,8 @@ section {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
@@ -140,8 +140,8 @@ section {
 .hvr-grow-shadow:focus,
 .hvr-grow-shadow:active {
   box-shadow: 0 10px 12px -9px rgba(0, 0, 0, 0.6); /* x, y, blur, spread, color */
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* size of logo */
@@ -514,6 +514,36 @@ font-size: 0.9em;
   color: hsla(24, 100%, 50%, 0.5);
 }
 
+/* tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+/* mobile size */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50%;
+    font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
+    line-height: 1.25;
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px #934848;
+    background-color: #fc5f5f;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    right: 65%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 /* ========== Services ========== */
 
