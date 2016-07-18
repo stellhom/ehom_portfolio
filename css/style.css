@@ -754,7 +754,6 @@ footer {
   color: #ed5a5a;
 }
 
-
 .copyright {
   text-align: center;
 }
@@ -791,7 +790,6 @@ footer {
   .proj-width {
     width: 50%;
   }
-
 
 }
 
@@ -838,17 +836,6 @@ footer {
   .proj-width {
     width: 33.333333%;
   }
-
-/* about page elements */
-  /*.headshot {
-    width: 40%;
-    float: left;
-  }
-
-  .bio {
-    width: 60%;
-    float: right;
-  }*/
 
   /* thank you page tooltip - sizing adjustments */
   .tooltip .tooltiptext {
