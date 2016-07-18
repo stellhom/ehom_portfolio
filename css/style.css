@@ -36,7 +36,7 @@ h1 strong {
 h1 {
   font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
   font-size: 2rem;
-  line-height: 1.25;
+  line-height: 1.5;
   padding-bottom: 8px;
 }
 
@@ -47,8 +47,18 @@ h2 {
   padding-bottom: 8px;
 }
 
-h3 {
+/*.highlighted-text-header {
+  font-family: 'Open Sans', sans-serif;
+  color: #ff6600;
+  font-weight: 600;
+  font-size: 2rem;
+}*/
 
+.highlighted-text-body {
+  color: #ff6600;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.25;
 }
 
 ul {
@@ -425,18 +435,7 @@ font-size: 0.9em;
 
 /* ========== About ========== */
 
-.container-center{
-  /*display: flex;
-  flex-direction: row;
-  justify-content: center;*/
-}
 
-.img-row {
-  width: 100%;
-  height: auto;
-  display: block;
-   box-shadow: 0px 0px 15px 0px hsla(240, 2%, 10%, 0.9); /* originally didnt work...but works now since adding in the .img-row:after pseudo class */
-}
 .photo-link {
   display: flex;
   flex-direction: column;
@@ -454,12 +453,37 @@ font-size: 0.9em;
   background-size: cover;
 }
 
+.img-row {
+  width: 100%;
+  height: auto;
+  display: block;
+   box-shadow: 0px 0px 15px 0px hsla(240, 2%, 10%, 0.9); /* originally didnt work...but works now since adding in the .img-row:after pseudo class */
+}
+/* SOLUTION for making dropshadow behind image collage show up, */
+.img-row:after {
+  clear: both;
+  display:block;
+  content:""; /* putting a placeholder in there, without this, the box-shadow does not have any 'content' for it to wrap around, which is why it doesn't show */
+}
+
+.img-nogap {
+  float: left; /* Removes gap between images */
+}
+
 .width100percent {
   width: 100%;
   height: auto;
   display: block;
 }
+.width25percent {
+  width: 25%;
+  height: auto;
+  display: block;
+}
 
+.bio h2 {
+  padding: 10px 0px 0px 0px;
+}
 
 /* ========== Services ========== */
 
@@ -496,6 +520,7 @@ font-size: 0.9em;
 .service h2 {
   padding-bottom: 0px;
 }
+
 /*.service a {
   font-weight: 700;
   font-size: 16px;
@@ -748,7 +773,7 @@ footer {
 
   h2 {
     font-size: 1.5rem;
-    line-height: 1.25;
+    line-height: 1.5;
     padding-bottom: 16px;
   }
   /* container for eh-logo */

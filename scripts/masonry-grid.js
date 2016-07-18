@@ -5,7 +5,9 @@ $(document).ready(function() {
 $('#proj-grid').masonry({
 // columnWidth: 320,
 itemSelector: '.proj-width'
-}).imagesLoaded(function() {
+})
+.imagesLoaded(function() {
+// $( window ).load(function() {
 $('#proj-grid').masonry('reload');
 });
 });
