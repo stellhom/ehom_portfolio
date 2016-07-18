@@ -421,8 +421,8 @@ font-size: 0.9em;
   .proj-wrapper {
     overflow:hidden;
   	position: relative;
-  	/*background: lightgrey;*/
-    /*cursor:pointer;*/
+  	background: lightgrey;
+    cursor:pointer;
   }
 
   /* makes the image fit within the container (targeting image tags within the main container #proj-grid) */
@@ -697,7 +697,8 @@ footer {
   clear: both;
   display: flex;
   flex-direction: column;
-  background-color: #494949;
+  background-color: lightgrey;
+  /*background-color: #494949;*/
   /*background-color: hsl(196, 15%, 10%);*/
   padding: 5% 20%;
 }
@@ -714,13 +715,13 @@ footer {
   list-style-type: none;
   padding: 0px 8px;
   margin: 10px 0px;
-  text-shadow: 2px 2px 3px hsla(0, 2%, 20%, 0.75); /* adds dropshadow to text! */
+  text-shadow: 2px 2px 3px hsla(0, 2%, 20%, 0.3); /* adds dropshadow to text! */
 }
 .social li a {
   color: white;
 }
 .social li a:hover {
-  color: #ff8c35;
+  color: #ed5a5a;
 }
 .copyright {
   text-align: center;
@@ -728,14 +729,16 @@ footer {
 
 .footer-text {
   font-family: 'Open Sans', sans-serif;
-  text-shadow: 2px 2px 3px hsla(0, 2%, 20%, 0.75);
+  text-shadow: 2px 2px 3px hsla(0, 100%, 100%, 0.75);
   font-size: 14px;
-  color: #f7f4f4;
+  color: #666;
+  /*color: #f7f4f4;*/
   line-height: 1.75;
   letter-spacing: 0.5px;
 }
 .fa-heart {
-  color: #ec342f;
+  color: #ed5a5a;
+  /*color: #ec342f;*/
 }
 
 /* ========== Media Queries for 480px ========== */
