@@ -340,6 +340,10 @@ a {
   line-height: 4rem;
 }
 
+.filter-margin {
+  padding: 5px 30px;
+}
+
 .button {
 font-family: 'Open Sans', sans-serif;
 text-transform: uppercase;
@@ -350,10 +354,11 @@ font-size: 0.9em;
   background-color: #fff;
 	border: none;
 	padding: 7px 10px 7px 10px;
-  margin: 10px 5px 15px 30px;
+  margin: 10px 10px 10px 0px;
 	border-radius: 2px;
 	color: #666;
 }
+
 .button a.current {
   border: 1px solid #ff6600;
   color: #ff6600;
@@ -724,9 +729,8 @@ footer {
 .social li {
   display: inline-block;
   list-style-type: none;
-  padding: 0px 15px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  padding: 0px 8px;
+  margin: 10px 0px;
   text-shadow: 2px 2px 3px hsla(0, 2%, 20%, 0.75); /* adds dropshadow to text! */
 }
 .social li a {
@@ -742,9 +746,10 @@ footer {
 .footer-text {
   font-family: 'Open Sans', sans-serif;
   text-shadow: 2px 2px 3px hsla(0, 2%, 20%, 0.75);
-  font-size: 15px;
+  font-size: 14px;
   color: #f7f4f4;
-  line-height: 1.5;
+  line-height: 1.75;
+  letter-spacing: 0.5px;
 }
 .fa-heart {
   color: #ec342f;
@@ -803,6 +808,15 @@ footer {
     padding: 20px 60px;
   }
 
+  .filter-margin {
+    padding: 10px 40px;
+  }
+
+  .button a {
+  	padding: 7px 20px 7px 20px;
+    margin: 10px 20px 10px 0px;
+  }
+
   /* project boxes */
   .proj-width {
     width: 33.333333%;
@@ -850,11 +864,14 @@ footer {
     text-align: center;
   }
 
-
   .service h2 {
     padding-bottom: 8px;
   }
 
+  .social li {
+    padding: 0px 15px;
+    margin: 20px 0px;
+  }
 
 }
 /* end min width 720px */
