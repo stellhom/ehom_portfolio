@@ -40,8 +40,8 @@
         <h2>I am a freelance graphic designer based in Toronto, Canada with a strong 12-year design background, passion for problem solving and bringing ideas to life through visual communications. I translate thoughts, ideas, visions, and goals into a visual media that can be understood by anyone.</h2>
 
 
-        <a href="#"><p class="orange-text">Find me on social media</p></a>
-        <div id="my-div">
+        <a href="#" id="socialmedia"><p class="orange-text">Find me on social media</p></a>
+        <div class="socialmedia">
           <div class="social-onwhite">
           <ul>
             <li><a target="_blank" href="https://www.instagram.com/stellhom/?hl=en"><i class="fa fa-instagram fa-2x"></i></a></li>
@@ -115,13 +115,9 @@
     </footer>
 <!-- scripts always go before closing body tag -->
    <script src="scripts/jquery-3.1.0.min.js"></script> <!-- jQuery library production version -->
+   <script src="scripts/toggle.js"></script>
+
    <script src="scripts/burgermenu.js"></script>
-   <script>
-   $('a').on('click', function(event) {
-   event.preventDefault();
-   $('#my-div').toggle('fast');
-   });
-</script>
 
   </body>
 </html>
