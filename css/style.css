@@ -46,7 +46,7 @@ h1 {
   font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
   font-size: 3rem;
   line-height: 1.25;
-  padding: 10px 0px;
+  padding-bottom: 8px;
 }
 
 h2 {
@@ -598,25 +598,25 @@ button:active {
     position: relative;
     display: inline-block;
 }
-
+/* mobile size */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 60%;
+    width: 50%;
     font-family: 'geometria_lightlight', 'helvetica', 'sans-serif';
     line-height: 1.25;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-shadow: 1px 1px 3px #934848;
     background-color: #fc5f5f;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 20px;
+    padding: 15px;
 
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: 15%;
-    right: 70%;
+    right: 65%;
 }
 
 .tooltip:hover .tooltiptext {
@@ -711,13 +711,11 @@ footer {
 
 @media screen and (min-width:720px) {
 
-
-
   /* increase font size, line height, padding */
   h1 {
     font-size: 3rem;
     line-height: 1.5;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
 
   /* container for eh-logo */
@@ -739,7 +737,8 @@ footer {
     width: 33.333333%;
   }
 
-  .headshot {
+/* about page elements */
+  /*.headshot {
     width: 40%;
     float: left;
   }
@@ -747,9 +746,21 @@ footer {
   .bio {
     width: 60%;
     float: right;
+  }*/
+
+  /* thank you page tooltip - sizing adjustments */
+  .tooltip .tooltiptext {
+      width: 60%;
+      line-height: 1.25;
+      font-size: 1.1rem;
+      padding: 20px;
+
+      /* Position the tooltip */
+      right: 70%;
   }
 
 }
+/* end min width 720px */
 
 
 /* ========== Media Queries for 1024px ========== */
