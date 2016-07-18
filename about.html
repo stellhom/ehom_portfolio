@@ -38,6 +38,20 @@
         <h1>Hello! I'm Estella Hom</h1>
 
         <h2>I am a freelance graphic designer based in Toronto, Canada with a strong 12-year design background, passion for problem solving and bringing ideas to life through visual communications. I translate thoughts, ideas, visions, and goals into a visual media that can be understood by anyone.</h2>
+
+
+        <a href="#"><p class="orange-text">Find me on social media</p></a>
+        <div id="my-div">
+          <div class="social-onwhite">
+          <ul>
+            <li><a target="_blank" href="https://www.instagram.com/stellhom/?hl=en"><i class="fa fa-instagram fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/stellhom"><i class="fa fa-twitter fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/estellahom"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a target="_blank" href="mailto:me@estellahom.com"><i class="fa fa-envelope fa-2x"></i></a></li>
+          </ul>
+        </div>
+        </div>
+
       </section>
         <div class="img-row">
 
@@ -75,6 +89,7 @@
         <p class="highlighted-text-body">I knew I wanted to be a graphic designer in high school.</p> <p>As an active member of the student council and Girls' Athletic Association, I created logos, invites, and ads for events. In September 2000, I got accepted into Canada's most competitive design program: The Joint Honours Bachelor of Design program offered by Sheridan College and York University. I graduated with honours and earned my <strong>Bachelor of Design Degree (BDes)</strong>.</p>
 
         <p>Since 2004, I have been using design as a medium to help businesses communicate their ideas, products and services through well conceived identities, logos, print collateral, packaging, and websites. My design work can be seen around the world - in books, on television commercials, printed ads, packaging on store shelves, websites, and ebooks.</p>
+
       </section>
 
       <!-- <section class="section-margin bio">
@@ -101,6 +116,12 @@
 <!-- scripts always go before closing body tag -->
    <script src="scripts/jquery-3.1.0.min.js"></script> <!-- jQuery library production version -->
    <script src="scripts/burgermenu.js"></script>
+   <script>
+   $('a').on('click', function(event) {
+   event.preventDefault();
+   $('#my-div').toggle('fast');
+   });
+</script>
 
   </body>
 </html>
